@@ -8,8 +8,13 @@
     <script type="text/javascript" src="controllers.js"></script>
   </head>
   <body>
-    <div ng-controller="ToDoController as controller">
-      {{controller.todo}}
+    <!-- can abbreviate 'controller' as 'ctrl' -->
+    <div ng-controller="ToDoController as ctrl">
+
+      <p ng-repeat="todo in ctrl.todos">
+        {{ todo.text }}: {{ todo.completed? "completed" : "not completed" }}
+      </p>
+
     </div>
   </body>
 </html>
