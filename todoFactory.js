@@ -1,6 +1,5 @@
-toDoApp.factory('todoFactory', function() {
-
-  Todo = function(todoText){
+toDoApp.factory('ToDoFactory', function() {
+  var Todo = function(todoText){
     this.text = todoText;
     this.completed = false;
   };
