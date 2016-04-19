@@ -13,8 +13,8 @@
     <!-- can abbreviate 'controller' as 'ctrl' -->
     <div ng-controller="ToDoController as ctrl">
       <p ng-repeat="todo in ctrl.todos">
-        {{ todo.text }}: {{ todo.completed? "completed" : "not completed" }}
-        <span ng-click="todo.complete();">Complete</span>
+        {{ todo.text }}: {{ todo.completed? "Completed" : "Not Completed" }}
+        <span ng-click="todo.complete();">- Click here to complete</span>
       </p>
       <input type="text" ng-model="todoText">
       <button ng-click="ctrl.addToDo(todoText);">Add a ToDo</button>
