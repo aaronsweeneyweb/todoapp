@@ -1,6 +1,9 @@
-toDoApp.controller('ToDoController', ['ToDoFactory', function(ToDoFactory) {
+toDoApp.controller('ToDoController', ['ToDoFactory', 'ToDoService',
+ function(ToDoFactory, ToDoService) {
 
   var self = this;
+
+  self.todos = ToDoService.getAll();
 
   self.todos = [];
 
