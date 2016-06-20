@@ -5,7 +5,7 @@ toDoApp.controller('ToDoController', ['ToDoFactory', 'ToDoService',
 
   self.todos = ToDoService.getAll();
 
-  self.todos = [];
+  // self.todos = [];
 
   self.addToDo = function(todoText) {
     self.todos.push(new ToDoFactory(todoText));
